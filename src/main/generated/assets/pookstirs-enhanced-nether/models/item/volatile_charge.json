@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pookstirs-enhanced-nether:item/volatile_charge"
+  }
+}

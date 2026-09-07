@@ -26,11 +26,17 @@ public class PookstirsEnhancedNether implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		PookstirsEnhancedNetherBlocks.initialize();
+		PookstirsEnhancedNetherItems.initialize();
 
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(
 				(creativeTab) -> {
-			creativeTab.accept(PookstirsEnhancedNetherBlocks.STAGNANT_WART_BLOCK.asItem());
-		});
+					creativeTab.accept(PookstirsEnhancedNetherBlocks.STAGNANT_WART_BLOCK.asItem());
+				});
+
+		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(
+				(creativeTab) -> {
+					creativeTab.accept(PookstirsEnhancedNetherItems.VOLATILE_CHARGE);
+				});
 	}
 
 	public static Identifier id(String path) {
