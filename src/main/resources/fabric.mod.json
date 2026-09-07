@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"pookstir.pookstirsenhancednether.PookstirSEnhancedNether"
+			"pookstir.pookstirsenhancednether.PookstirsEnhancedNether"
 		],
 		"client": [
-			"pookstir.pookstirsenhancednether.client.PookstirSEnhancedNetherClient"
+			"pookstir.pookstirsenhancednether.client.PookstirsEnhancedNetherClient"
 		],
 		"fabric-datagen": [
-			"pookstir.pookstirsenhancednether.client.PookstirSEnhancedNetherDataGenerator"
+			"pookstir.pookstirsenhancednether.client.PookstirsEnhancedNetherDataGenerator"
 		]
 	},
 	"mixins": [
