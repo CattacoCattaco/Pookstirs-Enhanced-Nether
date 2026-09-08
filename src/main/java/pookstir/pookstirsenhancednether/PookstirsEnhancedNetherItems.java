@@ -6,12 +6,15 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.DispenserBlock;
+import pookstir.pookstirsenhancednether.specialitems.VolatileChargeItem;
 
 public class PookstirsEnhancedNetherItems {
     public static final Item VOLATILE_CHARGE = register(
             PookstirsEnhancedNetherItemIDs.VOLATILE_CHARGE,
-            Item::new,
-            new Item.Properties()
+            VolatileChargeItem::new,
+            (new Item.Properties()).useCooldown(0.5f)
     );
 
     public static Item register(ResourceKey<Item> itemKey, Function<Item.Properties, Item> itemFactory,
@@ -26,5 +29,6 @@ public class PookstirsEnhancedNetherItems {
     }
 
     public static void initialize() {
+        DispenserBlock.registerProjectileBehavior(VOLATILE_CHARGE);
     }
 }
