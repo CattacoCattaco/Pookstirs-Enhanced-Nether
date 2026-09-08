@@ -38,8 +38,9 @@ public class VolatileChargeItem extends Item implements ProjectileItem {
                     serverLevel, stack, player, 0.0F, 1.5F, 1.0F);
         }
 
-        level.playSound((Entity)null, player.getX(), player.getY(), player.getZ(), SoundEvents.FIRECHARGE_USE,
-                SoundSource.NEUTRAL, 0.5F, 0.4F / (level.getRandom().nextFloat() * 0.4F + 0.8F));
+        level.playSound((Entity)null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT,
+                SoundSource.NEUTRAL, 1.0F,
+                (level.getRandom().nextFloat() - level.getRandom().nextFloat()) * 0.2F + 1.0F);
         player.awardStat(Stats.ITEM_USED.get(this));
         stack.consume(1, player);
         return InteractionResult.SUCCESS;
@@ -64,6 +65,6 @@ public class VolatileChargeItem extends Item implements ProjectileItem {
     public ProjectileItem.DispenseConfig createDispenseConfig() {
         return DispenseConfig.builder().positionFunction((source, direction) ->
                 DispenserBlock.getDispensePosition(source, (double)1.0F, Vec3.ZERO))
-                .uncertainty(6.6666665F).power(1.0F).overrideDispenseEvent(1051).build();
+                .uncertainty(6.6666665F).power(1.0F).overrideDispenseEvent(1018).build();
     }
 }
