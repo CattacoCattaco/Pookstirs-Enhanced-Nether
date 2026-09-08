@@ -27,6 +27,7 @@ public class PookstirsEnhancedNether implements ModInitializer {
 
 		PookstirsEnhancedNetherBlocks.initialize();
 		PookstirsEnhancedNetherItems.initialize();
+		PookstirsEnhancedNetherEntityTypes.initialize();
 
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(
 				(creativeTab) -> {

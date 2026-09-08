@@ -27,6 +27,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.SimpleExplosionDamageCalculator;
 import net.minecraft.world.level.gamerules.GameRules;
 import net.minecraft.world.phys.*;
+import pookstir.pookstirsenhancednether.PookstirsEnhancedNetherEntityTypes;
+import pookstir.pookstirsenhancednether.PookstirsEnhancedNetherItems;
 
 public class VolatileCharge extends AbstractHurtingProjectile implements ItemSupplier {
     public static final ExplosionDamageCalculator EXPLOSION_DAMAGE_CALCULATOR =  new SimpleExplosionDamageCalculator(
@@ -36,19 +38,19 @@ public class VolatileCharge extends AbstractHurtingProjectile implements ItemSup
     private int explosionPower = 6;
     private int noDeflectTicks = 5;
 
-    public VolatileCharge(final EntityType<? extends AbstractWindCharge> type, final Level level) {
+    public VolatileCharge(final EntityType<? extends VolatileCharge> type, final Level level) {
         super(type, level);
         this.accelerationPower = (double)0.0F;
     }
 
     public VolatileCharge(final Player player, final Level level, final double x, final double y, final double z) {
-        super(EntityTypes.FIREBALL, x, y, z, level);
+        super(PookstirsEnhancedNetherEntityTypes.VOLATILE_CHARGE, x, y, z, level);
         this.setOwner(player);
         this.accelerationPower = (double)0.0F;
     }
 
     public VolatileCharge(final Level level, final double x, final double y, final double z, final Vec3 direction) {
-        super(EntityTypes.FIREBALL, x, y, z, direction, level);
+        super(PookstirsEnhancedNetherEntityTypes.VOLATILE_CHARGE, x, y, z, direction, level);
         this.accelerationPower = (double)0.0F;
     }
 
@@ -137,7 +139,7 @@ public class VolatileCharge extends AbstractHurtingProjectile implements ItemSup
     }
 
     public ItemStack getItem() {
-        return ItemStack.EMPTY;
+        return new ItemStack(PookstirsEnhancedNetherItems.VOLATILE_CHARGE);
     }
 
     protected float getInertia() {
