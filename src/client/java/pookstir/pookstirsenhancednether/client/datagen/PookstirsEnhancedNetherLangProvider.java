@@ -22,6 +22,7 @@ public class PookstirsEnhancedNetherLangProvider extends FabricLanguageProvider 
     public void generateTranslations(HolderLookup.Provider holderLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(getKey("block", "stagnant_wart_block"), "Stagnant Wart Block");
         translationBuilder.add(getKey("block", "stagnant_stem"), "Stagnant Stem");
+        translationBuilder.add(getKey("block", "stagnant_nylium"), "Stagnant Nylium");
 
         translationBuilder.add(getKey("item", "volatile_charge"), "Volatile Charge");
     }

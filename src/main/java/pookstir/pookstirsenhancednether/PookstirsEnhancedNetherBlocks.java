@@ -8,11 +8,9 @@ import net.minecraft.references.BlockItemId;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 
 public class PookstirsEnhancedNetherBlocks {
@@ -26,6 +24,12 @@ public class PookstirsEnhancedNetherBlocks {
             PookstirsEnhancedNetherBlockIDs.STAGNANT_STEM,
             RotatedPillarBlock::new,
             Blocks.netherStemProperties(MapColor.COLOR_BLUE)
+    );
+    public static final Block STAGNANT_NYLIUM = register(
+            PookstirsEnhancedNetherBlockIDs.STAGNANT_NYLIUM,
+            NyliumBlock::new,
+            BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops().strength(0.4F).sound(SoundType.NYLIUM).randomTicks()
     );
 
     public static Block register(ResourceKey<Block> id, Function<BlockBehaviour.Properties, Block> blockFactory,

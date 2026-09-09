@@ -1,7 +1,13 @@
 // 26.2	-999999999-01-01T00:00:00	Pookstir's Enhanced Nether/Tags for minecraft:block
 513a44f41aea1bc2051e9f3461ee4b1fdfd0c3c2 data/c/tags/block/natural_logs/nether.json
+861b1a75ae61a508a5ec3ea7c2b4a3e6ed6b118e data/minecraft/tags/block/enderman_holdable.json
+861b1a75ae61a508a5ec3ea7c2b4a3e6ed6b118e data/minecraft/tags/block/huge_brown_mushroom_can_place_on.json
+861b1a75ae61a508a5ec3ea7c2b4a3e6ed6b118e data/minecraft/tags/block/huge_red_mushroom_can_place_on.json
 3c357651dbe3e6d6efc9e399a7cac5b0f45337f6 data/minecraft/tags/block/logs.json
 3c357651dbe3e6d6efc9e399a7cac5b0f45337f6 data/minecraft/tags/block/mineable/axe.json
 c93360bc6621e8e8e8ddfe6c9d647d8c5bb92081 data/minecraft/tags/block/mineable/hoe.json
+861b1a75ae61a508a5ec3ea7c2b4a3e6ed6b118e data/minecraft/tags/block/mineable/pickaxe.json
+a041145a181015615e35947c8f23feae6d11eeb9 data/minecraft/tags/block/nylium.json
+861b1a75ae61a508a5ec3ea7c2b4a3e6ed6b118e data/minecraft/tags/block/overrides_mushroom_light_requirement.json
 4e855d510504aae5851645817973a24e5382fd8e data/minecraft/tags/block/wart_blocks.json
 513a44f41aea1bc2051e9f3461ee4b1fdfd0c3c2 data/pookstirs-enhanced-nether/tags/block/stagnant_stems.json

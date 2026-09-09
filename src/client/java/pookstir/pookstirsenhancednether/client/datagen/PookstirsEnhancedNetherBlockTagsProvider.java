@@ -42,5 +42,18 @@ public class PookstirsEnhancedNetherBlockTagsProvider extends FabricTagsProvider
                 .addOptionalTag(ConventionalBlockTags.NETHER_NATURAL_LOGS);
         builder(BlockTags.MINEABLE_WITH_AXE)
                 .addOptionalTag(ConventionalBlockTags.NETHER_NATURAL_LOGS);
+
+        builder(BlockTags.NYLIUM)
+                .add(PookstirsEnhancedNetherBlockIDs.STAGNANT_NYLIUM);
+        builder(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addOptionalTag(BlockTags.NYLIUM);
+        builder(BlockTags.ENDERMAN_HOLDABLE)
+                .addOptionalTag(BlockTags.NYLIUM);
+        builder(BlockTags.HUGE_BROWN_MUSHROOM_CAN_PLACE_ON)
+                .addOptionalTag(BlockTags.NYLIUM);
+        builder(BlockTags.HUGE_RED_MUSHROOM_CAN_PLACE_ON)
+                .addOptionalTag(BlockTags.NYLIUM);
+        builder(BlockTags.OVERRIDES_MUSHROOM_LIGHT_REQUIREMENT)
+                .addOptionalTag(BlockTags.NYLIUM);
     }
 }
