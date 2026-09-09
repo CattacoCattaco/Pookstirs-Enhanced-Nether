@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "pookstirs-enhanced-nether:block/stagnant_stem",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "pookstirs-enhanced-nether:block/stagnant_stem"
+    },
+    "axis=z": {
+      "model": "pookstirs-enhanced-nether:block/stagnant_stem",
+      "x": 90
+    }
+  }
+}

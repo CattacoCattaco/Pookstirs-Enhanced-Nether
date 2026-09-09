@@ -17,5 +17,6 @@ public class PookstirsEnhancedNetherBlockLootTableProvider extends FabricBlockLo
     @Override
     public void generate() {
         dropSelf(PookstirsEnhancedNetherBlocks.STAGNANT_WART_BLOCK);
+        dropSelf(PookstirsEnhancedNetherBlocks.STAGNANT_STEM);
     }
 }

@@ -7,6 +7,7 @@ import net.minecraft.client.data.models.model.ModelTemplates;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 
+import net.minecraft.client.data.models.model.TexturedModel;
 import pookstir.pookstirsenhancednether.PookstirsEnhancedNetherBlocks;
 import pookstir.pookstirsenhancednether.PookstirsEnhancedNetherItems;
 
@@ -18,6 +19,8 @@ public class PookstirsEnhancedNetherModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
         blockStateModelGenerator.createTrivialCube(PookstirsEnhancedNetherBlocks.STAGNANT_WART_BLOCK);
+        blockStateModelGenerator.createAxisAlignedPillarBlock(PookstirsEnhancedNetherBlocks.STAGNANT_STEM,
+                TexturedModel.COLUMN_ALT);
     }
 
     @Override

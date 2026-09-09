@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "pookstirs-enhanced-nether:block/stagnant_stem_top",
+    "side": "pookstirs-enhanced-nether:block/stagnant_stem"
+  }
+}

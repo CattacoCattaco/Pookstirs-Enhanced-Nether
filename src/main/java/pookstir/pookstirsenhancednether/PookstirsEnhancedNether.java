@@ -32,6 +32,7 @@ public class PookstirsEnhancedNether implements ModInitializer {
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(
 				(creativeTab) -> {
 					creativeTab.accept(PookstirsEnhancedNetherBlocks.STAGNANT_WART_BLOCK.asItem());
+					creativeTab.accept(PookstirsEnhancedNetherBlocks.STAGNANT_STEM.asItem());
 				});
 
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(
