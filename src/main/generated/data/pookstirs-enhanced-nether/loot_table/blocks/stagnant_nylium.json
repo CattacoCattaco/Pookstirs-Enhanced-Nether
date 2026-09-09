@@ -10,7 +10,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pookstirs-enhanced-nether:stagnant_nylium"
+          "name": "minecraft:netherrack"
         }
       ],
       "rolls": 1.0
