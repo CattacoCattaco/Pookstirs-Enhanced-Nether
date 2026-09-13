@@ -20,5 +20,6 @@ public class PookstirsEnhancedNetherBlockLootTableProvider extends FabricBlockLo
         dropSelf(PookstirsEnhancedNetherBlocks.STAGNANT_WART_BLOCK);
         dropSelf(PookstirsEnhancedNetherBlocks.STAGNANT_STEM);
         dropOther(PookstirsEnhancedNetherBlocks.STAGNANT_NYLIUM, Blocks.NETHERRACK.asItem());
+        dropSelf(PookstirsEnhancedNetherBlocks.STAGNANT_FUNGUS);
     }
 }

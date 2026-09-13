@@ -22,6 +22,8 @@ public class PookstirsEnhancedNetherModelProvider extends FabricModelProvider {
         blockStateModelGenerator.createAxisAlignedPillarBlock(PookstirsEnhancedNetherBlocks.STAGNANT_STEM,
                 TexturedModel.COLUMN_ALT);
         blockStateModelGenerator.createNyliumBlock(PookstirsEnhancedNetherBlocks.STAGNANT_NYLIUM);
+        blockStateModelGenerator.createCrossBlockWithDefaultItem(PookstirsEnhancedNetherBlocks.STAGNANT_FUNGUS,
+                BlockModelGenerators.PlantType.NOT_TINTED);
     }
 
     @Override

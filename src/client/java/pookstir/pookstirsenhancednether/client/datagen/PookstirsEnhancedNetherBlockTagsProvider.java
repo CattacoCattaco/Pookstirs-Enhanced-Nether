@@ -15,16 +15,11 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import pookstir.pookstirsenhancednether.PookstirsEnhancedNether;
 import pookstir.pookstirsenhancednether.PookstirsEnhancedNetherBlockIDs;
+import pookstir.pookstirsenhancednether.PookstirsEnhancedNetherBlockTags;
 
 public class PookstirsEnhancedNetherBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
-    public static final TagKey<Block> STAGNANT_STEMS = create("stagnant_stems");
-
     public PookstirsEnhancedNetherBlockTagsProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
-    }
-
-    private static TagKey<Block> create(final String name) {
-        return TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(PookstirsEnhancedNether.MOD_ID, name));
     }
 
     @Override
@@ -34,7 +29,7 @@ public class PookstirsEnhancedNetherBlockTagsProvider extends FabricTagsProvider
         builder(BlockTags.MINEABLE_WITH_HOE)
                 .addOptionalTag(BlockTags.WART_BLOCKS);
 
-        builder(STAGNANT_STEMS)
+        builder(PookstirsEnhancedNetherBlockTags.STAGNANT_STEMS)
                 .add(PookstirsEnhancedNetherBlockIDs.STAGNANT_STEM);
         builder(ConventionalBlockTags.NETHER_NATURAL_LOGS)
                 .add(PookstirsEnhancedNetherBlockIDs.STAGNANT_STEM);
@@ -54,6 +49,8 @@ public class PookstirsEnhancedNetherBlockTagsProvider extends FabricTagsProvider
         builder(BlockTags.HUGE_RED_MUSHROOM_CAN_PLACE_ON)
                 .addOptionalTag(BlockTags.NYLIUM);
         builder(BlockTags.OVERRIDES_MUSHROOM_LIGHT_REQUIREMENT)
+                .addOptionalTag(BlockTags.NYLIUM);
+        builder(PookstirsEnhancedNetherBlockTags.SUPPORTS_STAGNANT_FUNGUS)
                 .addOptionalTag(BlockTags.NYLIUM);
     }
 }

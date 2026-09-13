@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "pookstirs-enhanced-nether:block/stagnant_fungus"
+  }
+}
