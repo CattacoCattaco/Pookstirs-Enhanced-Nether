@@ -8,6 +8,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.HugeFungusConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import pookstir.pookstirsenhancednether.PookstirsEnhancedNether;
 import pookstir.pookstirsenhancednether.PookstirsEnhancedNetherBlocks;
 
 public class PookstirsEnhancedNetherConfiguredFeatures {
@@ -26,7 +27,7 @@ public class PookstirsEnhancedNetherConfiguredFeatures {
                 Blocks.WEEPING_VINES_PLANT, Blocks.TWISTING_VINES, Blocks.TWISTING_VINES_PLANT, Blocks.CAVE_VINES,
                 Blocks.CAVE_VINES_PLANT, Blocks.SPORE_BLOSSOM, Blocks.AZALEA, Blocks.FLOWERING_AZALEA,
                 Blocks.MOSS_CARPET, Blocks.PINK_PETALS, Blocks.WILDFLOWERS, Blocks.BIG_DRIPLEAF,
-                Blocks.BIG_DRIPLEAF_STEM, Blocks.SMALL_DRIPLEAF});
+                Blocks.BIG_DRIPLEAF_STEM, Blocks.SMALL_DRIPLEAF, PookstirsEnhancedNetherBlocks.STAGNANT_FUNGUS});
 
         HugeFungusConfiguration stagnantFungusPlanted = new HugeFungusConfiguration(
                 PookstirsEnhancedNetherBlocks.STAGNANT_NYLIUM.defaultBlockState(),
