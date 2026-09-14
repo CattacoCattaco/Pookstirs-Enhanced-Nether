@@ -1,0 +1,5 @@
+// 26.2	-999999999-01-01T00:00:00	Pookstir's Enhanced Nether/Vanilla Huge Fungus Provider
+cd57dbc7c79062aa5f82f4ee830265f31e5e1445 data/minecraft/worldgen/configured_feature/crimson_fungus.json
+de2ed4aab036d1c6f06cc78eb53c65bd1bb064ea data/minecraft/worldgen/configured_feature/crimson_fungus_planted.json
+0116e0d0c140b899648412f567a843a71566e1ec data/minecraft/worldgen/configured_feature/warped_fungus.json
+36a2a1f0a81a4418167a585dd4add8a7967dedcf data/minecraft/worldgen/configured_feature/warped_fungus_planted.json

@@ -69,7 +69,8 @@
         "minecraft:wildflowers",
         "minecraft:big_dripleaf",
         "minecraft:big_dripleaf_stem",
-        "minecraft:small_dripleaf"
+        "minecraft:small_dripleaf",
+        "pookstirs-enhanced-nether:stagnant_fungus"
       ]
     },
     "stem_state": {
